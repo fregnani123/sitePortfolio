@@ -1,0 +1,39 @@
+.menu-navBar{
+   width: 100vw;
+   height: 100px;
+   background-color:blue;
+   box-sizing: border-box;
+
+}
+.menu-mobile{
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+}
+
+.menu-navBar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   gap:20px;
+   justify-content: flex-end;
+   padding: 40px;
+  
+   
+}
+
+.logo{
+   padding: 40px;
+   background-color: darkblue;
+   
+}
+
+.li-Menu{
+color: white;
+padding: 5px;
+}
+
+.Link {
+text-decoration: none;
+}
