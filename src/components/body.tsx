@@ -6,7 +6,9 @@ function body() {
 
     return (
         <div className='main-container'>
-            <Header/>
+            <h1 className='logo'>Fabiano Fregnani</h1>
+            <Header />
+            <div className='divBodyPartOne'></div><div className='divBodyPartTwo'></div>
         </div>
     )
 }

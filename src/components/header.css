@@ -1,39 +1,66 @@
+:root {
+   --cor1: rgb(255, 255, 255);
+   /*cor linhas menu*/
+   --cor2: rgb(0, 0, 0);
+   /*cor nome menu*/
+   --cor3: rgb(88, 18, 218);
+   /*cor links do menu */
+   --cor4: rgb(66, 66, 66);
+   /*cor do header */
+   --cor5:rgb(88, 18, 218);
+   /*cor do menu mobile */}
+
 .menu-navBar{
+   display: flex;
    width: 100vw;
    height: 100px;
-   background-color:blue;
    box-sizing: border-box;
-
+   
 }
 .menu-mobile{
    display: flex;
    align-items: center;
    box-sizing: border-box;
+   background-color: red;
+   height: 100px;
 }
 
 .menu-navBar{
    display: flex;
-   justify-content: center;
    align-items: center;
    list-style: none;
    gap:20px;
    justify-content: flex-end;
    padding: 40px;
-  
-   
+   padding-right: 450px;
 }
 
 .logo{
-   padding: 40px;
-   background-color: darkblue;
    
+   height: 100px;
+   display: flex;
+   padding-right: 250px;
+   padding-left: 20px;
+   align-items: center;
+   font-size: 20px;
+   font-weight: normal;
+   background-color: rgba(255, 0, 0, 0.548);
+   width: 300px;
+  text-wrap: nowrap;
 }
 
 .li-Menu{
 color: white;
+color: var(--cor2);
 padding: 5px;
+font-size: 16px;
+}
+#contact{
+   background-color: var(--cor3);
+   color: white;
 }
 
 .Link {
 text-decoration: none;
 }
+
