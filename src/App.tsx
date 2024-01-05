@@ -1,7 +1,6 @@
 // import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Body from '../src/components/body'
-import Header from './components/header';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
