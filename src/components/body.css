@@ -1,14 +1,8 @@
 :root {
     --cor1: rgb(255, 255, 255);
     --cor2: rgb(0, 0, 0);
-    --cor3: rgb(14, 118, 168);
+    --cor3: rgb(14, 137, 168);
     --cor4: rgb(66, 66, 66);
-
-}
-.fabianoImg {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
 }
 
 .main-container {
@@ -32,6 +26,10 @@ top: 100px;
 left: 300px;
 width: calc(100vw - 300px);
 height: calc(100vh - 100px);
+align-items: center;
+display: flex;
+justify-content: start;
+border-bottom: 10px solid var(--cor3);
 }
 
 .containerPerfil{
@@ -39,17 +37,69 @@ width: 280px;
 height: 280px;
 position: absolute;
 background-color:aliceblue;
-left: 140px;
-top: 180px;
+left: 130px;
+top: 140px;
 border-radius: 50%;
 border: 10px solid var(--cor3);
 box-sizing: border-box;
 overflow: hidden;
+justify-content: center;
+align-items: center;
+display:flex;
 }
 
 
 .fabianoImg {
-    width: 100%;
+    width: 220px;
     height: auto;
     display: block;
+    border-radius: 50%;
+    border: 13px solid var(--cor3);
+}
+
+.nome{
+font-size: 40px;
+font-family: 'Raleway', sans-serif;
+font-weight: 900;
+text-wrap: nowrap;
+}
+
+.subTitulo{
+    margin-top: 15px;
+    font-size: 20px;
+   
+}
+.sectionNome {
+    height: 300px;
+    margin-left: 170px;
+   
+}
+.CV{
+    margin-top: 30px;
+    width: 120px;
+    height: 35px;
+    border-radius: none;
+    border: 1px solid var(--cor3);
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+    
+}
+li {
+    list-style: none;
+}
+.linkedin, .git, .whatsap{
+    width: 20px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.midiaSocial{
+    width: 50px;
+    margin-left: 85px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    
 }

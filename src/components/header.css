@@ -1,7 +1,8 @@
 :root {
    --cor1: rgb(255, 255, 255);
    --cor2: rgb(0, 0, 0);
-   --cor3: rgb(0, 71, 171);
+   --cor3: rgb(14, 137, 168);
+   --cor4: rgb(59, 80, 138);
    --cor4: rgb(66, 66, 66);
    }
 
@@ -10,8 +11,8 @@
    width: 100vw;
    height: 100px;
    box-sizing: border-box;
-   
 }
+
 .menu-mobile{
    display: flex;
    align-items: center;
@@ -32,16 +33,15 @@
 .logo{
    height: 100px;
    display: flex;
-   padding-right: 250px;
-   padding-left: 50px;
+   padding-right: 230px;
+   padding-left: 70px;
    align-items: center;
    font-size: 20px;
    font-weight: normal;
    width: 300px;
   text-wrap: nowrap;
   background-color: var(--cor3);
-  color: white;
-
+  color: white;  
 }
 
 .li-Menu{
@@ -50,6 +50,7 @@ color: var(--cor2);
 padding: 5px;
 font-size: 16px;
 text-wrap: nowrap;
+margin-left: 20px;
 }
 #contact{
    background-color: var(--cor3);
@@ -58,5 +59,29 @@ text-wrap: nowrap;
 
 .Link {
 text-decoration: none;
+}
+
+.claro{
+   width: 15px;
+   height: auto;
+   cursor: pointer;
+}
+.escuro{
+   width: 15px;
+   height: auto;
+   cursor: pointer;
+   display: none;
+}
+
+#escuro{
+   width: 15px;
+   height: auto;
+   cursor: pointer;
+}
+#claro{
+   width: 15px;
+   height: auto;
+   cursor: pointer;
+   display: none;
 }
 
