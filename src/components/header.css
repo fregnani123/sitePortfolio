@@ -1,16 +1,34 @@
-:root {
-   --cor1: rgb(255, 255, 255);
-   --cor2: rgb(0, 0, 0);
-   --cor3: rgb(14, 137, 168);
-   --cor4: rgb(59, 80, 138);
-   --cor4: rgb(66, 66, 66);
-   }
 
-.menu-navBar{
+.menu-navBar {
+   display: flex;
+   width: 100vw;
+   height: 100px;
+   box-sizing: border-box;menu-navBar {
    display: flex;
    width: 100vw;
    height: 100px;
    box-sizing: border-box;
+   background-color: var(--cor1);
+   transition: background-color 1s ease;
+}
+
+.menu-navBarEscuro {
+   display: flex;
+   width: 100vw;
+   height: 100px;
+   box-sizing: border-box; 
+   background-color: var(--cor2);
+   transition: background-color 1s ease;
+}
+}
+
+.menu-navBarEscuro {
+   display: flex;
+   width: 100vw;
+   height: 100px;
+   box-sizing: border-box;
+   background-color: black;
+   transition: background-color 1s ease;
 }
 
 .menu-mobile{
@@ -18,6 +36,7 @@
    align-items: center;
    box-sizing: border-box;
    height: 100px;
+   
 }
 
 .menu-navBar{
@@ -27,7 +46,7 @@
    gap:20px;
    justify-content: flex-start;
    padding: 40px;
-   margin-left: 100px;
+   
 }
 
 .logo{
@@ -45,13 +64,18 @@
 }
 
 .li-Menu{
-color: white;
-color: var(--cor2);
 padding: 5px;
 font-size: 16px;
 text-wrap: nowrap;
 margin-left: 20px;
+color: white;
 }
+
+.li-Menu:hover{
+color: var(--cor3);
+transition: color .3s;
+}
+
 #contact{
    background-color: var(--cor3);
    color: white;
@@ -66,22 +90,16 @@ text-decoration: none;
    height: auto;
    cursor: pointer;
 }
-.escuro{
+#escuro{
+margin-left: -20px;
+}
+
+.active{
    width: 15px;
    height: auto;
    cursor: pointer;
    display: none;
 }
 
-#escuro{
-   width: 15px;
-   height: auto;
-   cursor: pointer;
-}
-#claro{
-   width: 15px;
-   height: auto;
-   cursor: pointer;
-   display: none;
-}
+
 

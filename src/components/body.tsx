@@ -4,17 +4,48 @@ import fabianoIMG from '../assets/img/fotoComFundo.png';
 import git from '../assets/img/git.png'
 import linkedin from '../assets/img/logotipo-do-linkedin.png'
 import whatsap from '../assets/img/whatsapp.png'
+import { useState } from 'react';
 
 
-function body() {
+function Body() {
+    const [active, setClaroEscuro] = useState(false);
+    const [colorDiv, setColorDiv] = useState(false);
+    const [corBody, setCorBoby] = useState(false);
+    const [corHead, setCorHead] = useState(false);
+
+    const toggleCor = () => {
+        setClaroEscuro(!active);
+        setCorBoby(!corBody);
+        setColorDiv(!colorDiv);
+        setCorHead(!corHead);
+    }
 
     return (
         <div className='main-container'>
-            <h1 className='logo'>Fabiano Fregnani</h1>
-            <Header />
-            <div className='divBodyPartOne'></div><div className='containerPerfil'><img className='fabianoImg' src={fabianoIMG} /></div><div className='divBodyPartTwo'><section className='sectionNome'><h1 className='nome'>Fabiano Fregnani</h1><p className='subTitulo'>Full-Stack Developer</p><button className='CV'>Download CV</button></section> <section ><ul className='midiaSocial'><li><img className='git' src={git}/></li><li><img className='linkedin' src={linkedin}/></li> <li><img className='whatsap' src={whatsap} alt="" /></li></ul></section></div>
+            <div className='headerDiv'>
+                <h1 className='logo'>Fabiano Fregnani</h1>
+                <Header toggleCor={toggleCor} active={active} colorDiv={colorDiv} corBody={corBody} corHead={corHead} />
+            </div>
+            <div className={corBody ? 'body-Container' : 'body-ContainerEscura'}>
+                <div className='divBodyPartOne'></div>
+                <div className='containerPerfil'><img className='fabianoImg' src={fabianoIMG} /></div>
+                <div className={colorDiv ? 'divBodyPartTwo' : 'divBodyPartTwoEscura'}>
+                    <section className='sectionNome'>
+                        <h1 className='nome'>Fabiano Fregnani</h1>
+                        <p className='subTitulo'>Full-Stack Developer</p>
+                        <button className='CV'>Download CV</button>
+                    </section>
+                    <section>
+                        <ul className='midiaSocial'>
+                            <li><img className='git' src={git} /></li>
+                            <li><img className='linkedin' src={linkedin} /></li>
+                            <li><img className='whatsap' src={whatsap} alt="" /></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </div>
     )
 }
 
-export default body
+export default Body;
