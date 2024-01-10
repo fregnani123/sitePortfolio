@@ -22,7 +22,7 @@ function Body() {
     
     return (
         <div className='main-container'>
-            <div className={corBody ? 'body-Container' : 'body-ContainerEscura'}>
+            <div className={corBody ? 'body-ContainerEscura':'body-Container'}>
                 <div className='divHeader'><h1 className='logo'>Fabiano Fregnani</h1>
                     <Header {...{ toggleCor, active, colorDiv, corBody, corHead }} /></div> 
                 <div className='divBody'>
