@@ -1,15 +1,17 @@
+:root {
+   --cor1: rgb(255, 255, 255);
+   --cor2: rgb(0, 0, 0);
+   --cor3: rgb(187, 153, 1);
+   --cor4: rgba(66, 66, 66, 0.664);
+   --cor5: rgb(0, 99, 124);
+   --cor6: rgb(14, 137, 168);
+}
 
 .menu-navBar {
    display: flex;
    width: 100vw;
    height: 100px;
-   box-sizing: border-box;menu-navBar {
-   display: flex;
-   width: 100vw;
-   height: 100px;
    box-sizing: border-box;
-   background-color: var(--cor1);
-   transition: background-color 1s ease;
 }
 
 .menu-navBarEscuro {
@@ -17,18 +19,12 @@
    width: 100vw;
    height: 100px;
    box-sizing: border-box; 
-   background-color: var(--cor2);
-   transition: background-color 1s ease;
 }
-}
-
 .menu-navBarEscuro {
    display: flex;
    width: 100vw;
    height: 100px;
    box-sizing: border-box;
-   background-color: black;
-   transition: background-color 1s ease;
 }
 
 .menu-mobile{
@@ -36,7 +32,7 @@
    align-items: center;
    box-sizing: border-box;
    height: 100px;
-   
+
 }
 
 .menu-navBar{
@@ -58,9 +54,10 @@
    font-size: 20px;
    font-weight: normal;
    width: 300px;
-  text-wrap: nowrap;
-  background-color: var(--cor3);
-  color: white;  
+   color:var(--cor3); 
+   font-family: 'Raleway', sans-serif;
+   font-weight: 900;
+   white-space: nowrap;
 }
 
 .li-Menu{
@@ -68,12 +65,13 @@ padding: 5px;
 font-size: 16px;
 text-wrap: nowrap;
 margin-left: 20px;
-color: white;
+color: var(--cor3);
 }
 
 .li-Menu:hover{
-color: var(--cor3);
-transition: color .3s;
+color: rgb(255, 255, 255);
+background-color: var(--cor3);
+transition: color .02s;
 }
 
 #contact{
@@ -95,7 +93,7 @@ margin-left: -20px;
 }
 
 .active{
-   width: 15px;
+   width: 20px;
    height: auto;
    cursor: pointer;
    display: none;

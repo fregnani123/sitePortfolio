@@ -19,32 +19,28 @@ function Body() {
         setColorDiv(!colorDiv);
         setCorHead(!corHead);
     }
-
+    
     return (
         <div className='main-container'>
-            <div className='headerDiv'>
-                <h1 className='logo'>Fabiano Fregnani</h1>
-                <Header toggleCor={toggleCor} active={active} colorDiv={colorDiv} corBody={corBody} corHead={corHead} />
-            </div>
             <div className={corBody ? 'body-Container' : 'body-ContainerEscura'}>
-                <div className='divBodyPartOne'></div>
-                <div className='containerPerfil'><img className='fabianoImg' src={fabianoIMG} /></div>
-                <div className={colorDiv ? 'divBodyPartTwo' : 'divBodyPartTwoEscura'}>
-                    <section className='sectionNome'>
+                <div className='divHeader'><h1 className='logo'>Fabiano Fregnani</h1>
+                    <Header {...{ toggleCor, active, colorDiv, corBody, corHead }} /></div> 
+                <div className='divBody'>
+                    <img className='fabianoImg' src={fabianoIMG} />
+                    <section className='perfil'>
+                        <p className='hello'>Hello, I'm </p>
                         <h1 className='nome'>Fabiano Fregnani</h1>
                         <p className='subTitulo'>Full-Stack Developer</p>
                         <button className='CV'>Download CV</button>
-                    </section>
-                    <section>
                         <ul className='midiaSocial'>
                             <li><img className='git' src={git} /></li>
                             <li><img className='linkedin' src={linkedin} /></li>
                             <li><img className='whatsap' src={whatsap} alt="" /></li>
-                        </ul>
-                    </section>
-                </div>
+                        </ul></section>
+                        </div>     
+                   </div>
             </div>
-        </div>
+      
     )
 }
 

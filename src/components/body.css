@@ -1,99 +1,26 @@
 :root {
     --cor1: rgb(255, 255, 255);
     --cor2: rgb(0, 0, 0);
-    --cor3: rgb(14, 137, 168);
-    --cor4: rgb(66, 66, 66);
+    --cor3: #bb9901;
+    --cor4: rgba(66, 66, 66, 0.98);
+    --cor5: rgb(0, 99, 124);
+    --cor6: rgb(14, 137, 168);
 }
 
-.main-container {
-    position: relative;
+.body-ContainerEscura{
+    background-color:  var(--cor2);
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    
+    transition: background-color 1s ease;
+}
+.body-Container{
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 1s ease;
 }
 
 .headerDiv {
     display: flex;
-}
-
-.body-Container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--cor1);
-     transition: background-color 1s ease;
-}
-
-.body-ContainerEscura {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--cor2);
-    transition: background-color 1s ease;
-    
-}
-
-.divBodyPartOne {
-    width: 300px;
-    height: calc(100vh - 100px);
-    background-color: var(--cor3);
-    border-bottom: 10px solid var(--cor3);
-}
-
-.divBodyPartTwo{
-    height: calc(100vh - 100px);
-    width: calc(100vw - 300px);
-    align-items: center;
-    display: flex;
-    border-bottom: 10px solid var(--cor3);
-}
-
-.divBodyPartTwoEscura {
-    height: calc(100vh - 100px);
-    width: calc(100vw - 300px);
-    align-items: center;
-    display: flex;
-    border-bottom: 10px solid var(--cor3);
-    color: white;
-}
-
-.containerPerfil {
-    position: fixed;
-
-    width: 280px;
-    height: 280px;
-    background-color: aliceblue;
-    left: 130px;
-    top: 140px;
-    border-radius: 50%;
-    border: 10px solid var(--cor3);
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.fabianoImg {
-    width: 220px;
-    height: auto;
-    display: block;
-    border-radius: 50%;
-    border: 13px solid var(--cor3);
-}
-
-.nome {
-    font-size: 40px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    white-space: nowrap;
-    /* Corrigido de text-wrap para white-space */
-}
-
-.subTitulo {
-    margin-top: 15px;
-    font-size: 20px;
 }
 
 .sectionNome {
@@ -101,15 +28,71 @@
     margin-left: 170px;
 }
 
+.divHeader {
+    display: flex;
+}
+
+.divBody {
+width: 100vh;
+height: calc(100vh - 100px);
+display: flex;
+justify-content: end;
+align-items: center;
+gap: 20px;
+}
+
+.fabianoImg {
+    width: 220px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.perfil{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: -30px;
+}
+.perfilAtivo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.hello {
+    color: var(--cor4);
+    font-size: 18px;
+}
+.nome {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    white-space: nowrap;color:var(--cor3);
+}
+
+
+.subTitulo {
+    margin-top: 5px;
+    font-size: 25px;
+    color: var(--cor4);
+}
+
 .CV {
     margin-top: 30px;
     width: 120px;
     height: 35px;
-    border-radius: none;
-    border: 1px solid var(--cor3);
-    background-color: var(--cor3);
-    color: white;
-    cursor: pointer;
+    border-style: none;
+     cursor: pointer;
+        background-color: var(--cor3);
+        color: white;
+}
+.CV:hover {
+    margin-top: 30px;
+    width: 120px;
+    height: 35px;
+
 }
 
 li {
@@ -127,9 +110,8 @@ li {
 }
 
 .midiaSocial {
-    width: 50px;
-    margin-left: 85px;
-    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
     justify-content: center;
-    text-align: center;
 }
