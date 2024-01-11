@@ -9,22 +9,17 @@ import { useState } from 'react';
 
 function Body() {
     const [active, setClaroEscuro] = useState(false);
-    const [colorDiv, setColorDiv] = useState(false);
-    const [corBody, setCorBoby] = useState(false);
-    const [corHead, setCorHead] = useState(false);
+    
 
     const toggleCor = () => {
         setClaroEscuro(!active);
-        setCorBoby(!corBody);
-        setColorDiv(!colorDiv);
-        setCorHead(!corHead);
     }
     
     return (
         <div className='main-container'>
-            <div className={corBody ? 'body-ContainerEscura':'body-Container'}>
+            <div className={active ? 'body-ContainerEscura':'body-Container'}>
                 <div className='divHeader'><h1 className='logo'>Fabiano Fregnani</h1>
-                    <Header {...{ toggleCor, active, colorDiv, corBody, corHead }} /></div> 
+                    <Header {...{ toggleCor, active }} /></div> 
                 <div className='divBody'>
                     <img className='fabianoImg' src={fabianoIMG} />
                     <section className='perfil'>

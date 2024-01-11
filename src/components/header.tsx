@@ -6,10 +6,9 @@ import sol from '../assets/img/ensolarado.png';
 interface HeaderProps {
     toggleCor: () => void;
     active: boolean;
-    corHead: boolean;
 }
 
-function Header({ toggleCor, active, corHead }: HeaderProps) {
+function Header({ toggleCor, active}: HeaderProps) {
     const listaMenu = [
         { id: '1', texto: 'Home', to: '/' },
         { id: '2', texto: 'About Me', to: '/' },
@@ -17,7 +16,7 @@ function Header({ toggleCor, active, corHead }: HeaderProps) {
         { id: '4', texto: 'Contact Me', to: '/', idClass: 'contact' },
     ];
 
-    const menuClass = corHead ? 'menu-mobile' : 'menu-navBarEscuro';
+    const menuClass = active ? 'menu-mobile' : 'menu-navBarEscuro';
 
     return (
         <nav className={menuClass}>

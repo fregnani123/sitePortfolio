@@ -72,11 +72,22 @@ gap: 20px;
     font-weight: 900;
     white-space: nowrap;color:var(--cor3);
 }
+.nomeAtivo {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    white-space: nowrap;color:var(--cor3);
+}
 
 .subTitulo {
     margin-top: 5px;
     font-size: 25px;
     color: var(--cor4);
+}
+.subTituloAtivo {
+    margin-top: 5px;
+    font-size: 25px;
+    color: white;
 }
 
 .CV {
