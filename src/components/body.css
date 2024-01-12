@@ -1,23 +1,36 @@
 :root {
     --cor1: rgb(255, 255, 255);
-    --cor2: rgb(0, 0, 0);
-    --cor3: #bb9901;
+    --cor2: #001a33;
+    --cor3: rgb(148, 121, 0);
     --cor4: rgb(59, 59, 59);
     --cor5: rgb(0, 99, 124);
-    --cor6: rgb(14, 137, 168);
+    --cor6: #91d1eb;
+    --cor7: radial-gradient(ellipse at center, #fff7db 0%, #f9df9c 50%, #ffc066 100%);
+    --cor8:black;
 }
 
 body {
-    overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  background-color:  #87ceeb;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor8);
+  font-family: Arial, sans-serif;
+   transition: background-color 1s ease;
 }
 
 .body-ContainerEscura{
-    background-color:  var(--cor2);
+    background-color: var(--cor2);
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    /* background-image:url('../assets/img/espaco3.jpg') ; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +40,8 @@ body {
 .body-Container{
     width: 100vw;
     height: 100vh;
-    transition: background-color 1s ease;    
+    background: var(--cor6);
+    transition: background-color 1s ease;
 }
 
 .headerDiv {
@@ -54,47 +68,43 @@ gap: 20px;
 }
 
 .fabianoImg {
-    width: 250px;
+    width: 170px;
     height: auto;
     border-radius: 50%;
-    margin-right: 20px; 
+    margin-top: -170px;
+    margin-right: 0px;
+    background: var(--cor7);
+   
 }
-.fabianoActive {
-    width: 220px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 20px; 
-    display: none;
-}
-.luaActive {
-    width: 270px;
-    height: 280;
-    border-radius: 0%;
-    margin-right: 20px; 
-}
-.lua{
-    width:220px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 20px; 
+
+.fabianoActive,.lua  {
     display: none;
 }
 
-.perfil{
+.luaActive {
+    width: 270px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+
+.perfil {
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-right: -30px;
+    margin-top: -120px;
+
 }
 .perfilAtivo{
     align-items: center;
     justify-content: center;
     text-align: center;
-    
 }
 
 .hello {
-    color: var(--cor4);
+    color: var(--cor8);
     font-size: 18px;
 }
 .helloActive {
@@ -104,8 +114,9 @@ gap: 20px;
 .nome {
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    white-space: nowrap;color:var(--cor3);
+    white-space: nowrap;color:var(--cor2);
+    white-space: nowrap;
+    color: var(--cor8);
 }
 .nomeActive {
     font-size: 40px;
@@ -117,7 +128,7 @@ gap: 20px;
 .subtitulo {
     margin-top: 5px;
     font-size: 25px;
-    color: var(--cor4);
+    color: var(--cor2);
 }
 .subtituloActive {
     margin-top: 5px;
@@ -228,34 +239,35 @@ li {
 }
 
 .arvoreActive {
-    position: absolute;
-        width: 500px;
-        height: auto;
-        top: 32vh;
-        left: 630px;
+border-radius: 50%;
+position: absolute;
+width: 350px;
+height: auto;
+top: 53vh;
+left: 150px;
 }
 
 .arvore {
-    position: absolute;
-        width: 500px;
-        height: auto;
-        top: 32vh;
-        left: 630px;
         display: none;
 }
-.arvoreSecaActive {
-    position: absolute;
-        width: 500px;
-        height: auto;
-        top: 41vh;
-        left: 630px;
+.arvoreNoiteActive {
+border-radius: 50%;
+position: absolute;
+width: 350px;
+height: auto;
+top: 53vh;
+left: 150px;
 }
 
-.arvoreSeca {
+.arvoreNoite {
+    display: none;
+}
+
+.divGrama{
+    background-image: url('../assets/img/grama.png');
     position: absolute;
-        width: 500px;
-        height: auto;
-        top: 32vh;
-        left: 630px;
-        display: none;
+    bottom: 0px;
+    width: 100%;
+    height: 25px;
+    background-repeat: repeat;
 }

@@ -1,12 +1,13 @@
 import '../components/body.css';
 import Header from '../components/header';
-import fabianoIMG from '../assets/img/fotoComFundo.png';
+import fabianoIMG from '../assets/img/fabiano.png';
 import lua from '../assets/img/lua.png';
 import git from '../assets/img/git.png'
 import linkedin from '../assets/img/logotipo-do-linkedin.png'
 import whatsap from '../assets/img/whatsapp.png';
 import arvore from '../assets/img/arvore.png';
-import arvoreSeca from '../assets/img/arvoreSeca.png';
+import arvoreNoite from '../assets/img/arvoreNoite.png';
+// import grama from '../assets/img/grama.png';
 // import nave from '../assets/img/space.gif'
 import passaros from '../assets/img/passaros.gif'
 import { useState } from 'react';
@@ -20,12 +21,11 @@ function Body() {
     return (
         <div className='main-container'>
             <div className={active ? 'body-ContainerEscura' : 'body-Container'}>
-                {/* <img className={active ? 'naveActive' : 'nave'} src={nave} alt="" /> */}
                 <img className={active ? 'passaros1':'passarosActive1'} src={passaros} alt="" />
                 <img className={active ? 'passaros': 'passarosActive2'} src={passaros} alt="" />
                 <img className={active ? 'passaros' : 'passarosActive3'}src={passaros} alt="" />
-                <img className={active ? 'arvore' : 'arvoreActive'} src={arvore} alt="" />
-                <img className={active ? 'arvoreSecaActive' : 'arvoreSeca'} src={arvoreSeca} alt="" />
+                <img className={active ? 'arvore' : 'arvoreActive'} src={arvore} alt=""/>
+                <img className={active ? 'arvoreNoiteActive' : 'arvoreNoite'}  src={arvoreNoite} alt="" />
                 <div className='divHeader'><h1 className='logo'>Fabiano Fregnani</h1>
                     <Header {...{ toggleCor, active }} /></div> 
                 <div className='divBody'>
@@ -42,7 +42,8 @@ function Body() {
                             <li><img className='whatsap' src={whatsap} alt="" /></li>
                         </ul></section>
                     
-                        </div>     
+                </div>  
+                <div className='divGrama'></div>
                    </div>
             </div>
       
