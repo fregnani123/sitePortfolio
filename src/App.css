@@ -1,5 +1,15 @@
-.app{
-  width: auto;
-  height: auto;
-  background-color: rgb(112, 33, 33);
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+:root {
+    --cor1: rgb(255, 255, 255);
+    --cor2: #001a33;
+    --cor3: rgb(148, 121, 0);
+    --cor4: rgb(59, 59, 59);
+    --cor5: rgb(0, 99, 124);
+    --cor6: #91d1eb;
+    --cor7: black;
+    --cor8: green;
 }
