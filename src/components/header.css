@@ -6,7 +6,6 @@
    height: 100px;
    box-sizing: border-box;
 }
-
 .menu-navBarEscuro {
    display: flex;
    width: 100vw;
@@ -51,7 +50,7 @@
    font-family: 'Raleway', sans-serif;
    font-weight: 900;
    white-space: nowrap;
-}
+}A
 
 .li-Menu{
 padding: 5px;

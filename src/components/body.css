@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --cor1: rgb(255, 255, 255);
     --cor2: #001a33;
@@ -5,326 +10,47 @@
     --cor4: rgb(59, 59, 59);
     --cor5: rgb(0, 99, 124);
     --cor6: #91d1eb;
-    --cor7:  black;
+    --cor7: black;
+    --cor8: green;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color:  #87ceeb;
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cor8);
-  font-family: Arial, sans-serif;
-   transition: background-color 1s ease;
-}
 
-.body-ContainerEscura{
-    background-color: var(--cor2);
+.container{
+    display: flex;
     width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-color 1s ease;
-}
-
-.body-Container{
-    width: 100vw;
-    height: 100vh;
+    height: auto;
     background: var(--cor6);
-    transition: background-color 1s ease;
+    background-color: var(--cor8)
 }
 
-.headerDiv {
-    display: flex;
-}
-
-.sectionNome {
-    height: 300px;
-    margin-left: 170px;
-}
-
-.divHeader {
-    display: flex;
-}
-
-.divBody {
-width: 100vh;
-height: calc(100vh - 100px);
-display: flex;
-justify-content: end;
-align-items: center;
-gap: 20px;
-
-}
-
-@keyframes gradientChange {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.perfil {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: -145px;
-    margin-top: -250px;
-    padding-top: 21px;
-    padding-bottom: 23px;
-    padding-right: 22px;
-    padding-left: 128px;
-    background: linear-gradient(90deg, #01374d, #268a2e, #738000, #5c0a75, rgb(25, 0, 255));
-    background-size: 200% 200%;
-    background-size: 200% 200%;
-    animation: gradientChange 5s infinite;
-    color: white;
-}
-
-.perfilActive {
-    align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-right: -145px;
-        margin-top: -250px;
-        padding-top: 21px;
-        padding-bottom: 23px;
-        padding-right: 22px;
-        padding-left: 128px;
-        background: linear-gradient(90deg, #01374d, #268a2e, #738000, #5c0a75, rgb(25, 0, 255));
-        background-size: 200% 200%;
-        background-size: 200% 200%;
-        animation: gradientChange 5s infinite;
-        color: white;
-}
-
-.fabianoImg {
-    position: absolute;
-    width: 140px;
-    height: auto;
-    top: 162px;
-    left: 362px;
-}
-
-.fabianoActive,.lua  {
-    display: none;
-}
-
-.roboActive {
-    position: absolute;
-    width: 210px;
-    height: auto;
-    top: 180px;
-    left: 330px;
-    border-radius:  50%;
-}
-
-.robo,.lua  {
-    display: none;
-}
-
-.luaActive {
-    width: 270px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 50px;
-    margin-top: 5px;
-}
-
-.hello {
-    font-size: 13px;
-}
-
-.nome {
-    font-size: 35px;
-    font-family: 'Raleway', sans-serif;
-    white-space: nowrap;color:var(--cor2);
-    white-space: nowrap;
-    color: var(--cor8);
-}
-
-.subtitulo {
-    margin-top: 5px;
-    font-size: 25px;
-}
-
-
-/* .CV {
-    margin-top: 30px;
-    width: 120px;
-    height: 35px;
-    border-style: none;
-     cursor: pointer;
-        background-color: var(--cor3);
-        color: white;
-}
-.CV:hover {
-    margin-top: 30px;
-    width: 120px;
-    height: 35px;
-} */
-
-li {
-    list-style: none;
-}
-
-.linkedin,
-.git,
-.whatsap {
-    width: 20px;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    cursor: pointer;
-    display: none;
-}
-
-.midiaSocial {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
-}
-
-/* @keyframes move {
-    0% {
-        top: 120vh;
-        left: -400px;
-    }
-
-    100% {
-        top: -40vh;
-        left: 1300px;
-    }
-} */
-
-/* .naveActive{
-    position: absolute;
-    width:300px;
-    height: auto;
-    animation: move;animation-duration: 15s;
-    top: 120vh;
+.item1{
+    background: var(--cor2);
+    width: 200px;
+    height: 200px;
     
 }
-.nave{
-    position: absolute;
-    display: none;
-} */
-
-.passarosActive1{
-    position: absolute;
-    width:360px;
-    height: auto;
-    top: 20vh;
-    
+.item2{
+    background: var(--cor3);
+    width: 200px;
+    height: 200px;
 }
-.passaros1{
-    position: absolute;
-    width:300px;
-    height: auto;
-    top: 50vh;
-    left: 20px; 
+.item3{
+    background: var(--cor4);
+    width: 200px;
+    height: 200px;
 }
-
-.passarosActive2{
-    position: absolute;
-    width:300px;
-    height: auto;
-    left: 400px;
-    top: 11vh;
+.item4{
+    background: var(--cor5);
+    width: 200px;
+    height: 200px;
 }
-
-.passarosActive3{
-    position: absolute;
-    width:200px;
-    height: auto;
-    top: 20vh;
-    left: 900px;
+.item5{
+    background: var(--cor6);
+    width: 200px;
+    height: 200px;
 }
-
-.passaros {
-    position: absolute;
-    display: none;
-}
-
-.arvoreActive,.arvoreNoiteActive {
-border-radius: 50%;
-position: absolute;
-width: 350px;
-height: auto;
-top:53vh;
-left: 100px;
-}
-
-.arvore {
-        display: none;
-}
-
-
-.arvoreNoite {
-    display: none;
-}
-
-.divGrama{
-    background-image: url('../assets/img/grama.png');
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 25px;
-    background-repeat: repeat;
-}
-.outdoorNoite{
-position: absolute;
-    width: 470px;
-    height: auto;
-    top: 22vh;
-    left: 340px;
-}
-.outdoorNoiteActive{
-    position: absolute;
-        width: 470px;
-        height: auto;
-        top: 22vh;
-        left: 340px;
-}
-
-
-@keyframes move {
-    0% {
-        right: -100px;
-    }
-
-    100% {
-        right: 1400px;
-    }
-}
-
-.gatoActive {
-    position: absolute;
-    width: 140px;
-    height: auto;
-    top: 89vh;
-    animation: move 25s linear ;
-    /* Adicionei 'linear' para uma transição mais uniforme e 'infinite' para repetição */
-    right: 1400px;
-}
-
-.gatoNoiteActive {
-    display: none;
+.item6{
+    background: var(--cor7);
+    width: 200px;
+    height: 200px;
 }
