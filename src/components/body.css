@@ -2,20 +2,169 @@
     padding: 0;
     margin: 0;
 }
-
+.divImg{
+    margin-top: 93px;
+}
 body{
-background-color: red;
 overflow: hidden;
+position: relative;
 }
 
 .container{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     height: 100vh;
     width: auto;
-    background-color:var(--cor3);
+    background-color: var(--cor6);
+    display: flex;
+    transition: background-color 3s;
+    
+}
+.containerNoite{
+    height: 100vh;
+    width: auto;
+    background-color: var(--cor2);
+    display: flex;
+    transition: background-color 3s;
 }
 
-.item1{
-    background: var(--cor2);
+.city{
+display: none;
+}
+
+.cityNone{
+    width: 1365px;
+    margin-top: 75px;
+    
+}
+
+.cityNoiteNone{
+    width: 1365px;
+    margin-top: 75px;
+}
+
+.cityNoite{
+    display: none;
+   
+}
+
+ @keyframes move{
+    0% {top:100px ;
+        left: -150px;}
+    100%{top:65px ;
+        left: 200px}
+ }
+ @keyframes moveNoite{
+    0% {top:65px ;
+        left: 200px;}
+    100%{top:100px ;
+        left: -150px}
+ }
+
+.luaNoite{
+    position: absolute;
+    width: 150px;
+    top:65px;
+    left: 200px;
+    animation: move;
+    animation-duration:5s;
+}
+
+.luaNone{
+    position: absolute;
+        width: 150px;
+        top: 65px;
+        left: -150px;
+        animation: moveNoite;
+        animation-duration: 4s;
+}
+
+.buttonGato{
+   position:absolute;
+   bottom: 0;
+}
+.Header{
+    position: fixed;
+    margin-left: 150px;
+}
+.arvoreDia, .arvoreNoite{
+    position: fixed;
+    top: 324px;
+    left: 40px;
+    width: 300px;
+    height: auto; 
+}
+.arvoreDiaNone{
+    display: none;
+}
+
+
+.arvoreNoiteNone {
+    display: none;
+}
+
+.outdoorDia,.outdoorNoite{
+    position: fixed;
+    top: 278px;
+    left: 280px;
+    width: 400px;
+    height: auto;
+    /* transform: rotateY(-20deg); */
+}
+
+.passaroDia{
+    width: 200px;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    height: auto;
+    }
+.passaroDia1{
+    width: 200px;
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    height: auto;
+    }
+
+.passaroDiaNone,.passaroDiaNone1 {
+    display: none;
+    }
+
+.passaroNoite{
+        width: 150px;
+        position: fixed;
+        top: 110px;
+        left: 180px;
+        height: auto;
+      
+    }
+
+.passaroNoiteNone{
+  display: none;
+  
+    }
+.logoOutdoor {
+    font-size: 18px;
+    position: fixed;
+    top: 326px;
+    left: 325px;
+    height: 95px;
+    width: 328px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #add8e6, #fbdb89, #98fb98);
+    /* Initial gradient colors */
+    background-size: 300% 100%;
+    /* Triple the width to allow smooth movement */
+    animation: gradientAnimation 5s linear infinite;
+    /* Adjust duration as needed */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: -100% 0%;
+    }
 }

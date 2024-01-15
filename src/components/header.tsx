@@ -21,9 +21,10 @@ function Header({ toggleCor, active}: HeaderProps) {
     return (
         <nav className={menuClass}>
             <ul className='menu-navBar'>
+                <li className='logo'>🅵🆁🅴🅶🅽🅰🅽🅸</li>
                 {listaMenu.map(({ id, texto, to, idClass }) => (
                     <Link className='Link' to={to} key={id}>
-                        <li className='li-Menu' id={idClass}>{texto}</li>
+                        <li className={active ? 'li-Menu' : 'li-MenuNoite'}id={idClass}>{texto}</li>
                     </Link>
                 ))}
                 <li><img className={active ? 'active' : 'claro'} onClick={toggleCor} src={lua} alt='Lua' /></li>
