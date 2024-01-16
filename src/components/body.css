@@ -135,29 +135,29 @@ display: none;
         top: 110px;
         left: 180px;
         height: auto;
-      
     }
 
 .passaroNoiteNone{
   display: none;
-  
     }
-.logoOutdoor {
-    font-size: 18px;
+
+.bancoDia,.bancoNoite{
+    width: 230px;
     position: fixed;
-    top: 326px;
-    left: 325px;
-    height: 95px;
-    width: 328px;
-    padding-top: 10px;
-    padding-left: 20px;
-    background: linear-gradient(to right, #add8e6, #fbdb89, #98fb98);
-    /* Initial gradient colors */
-    background-size: 300% 100%;
-    /* Triple the width to allow smooth movement */
-    animation: gradientAnimation 5s linear infinite;
-    /* Adjust duration as needed */
+    top: 440px;
+    left: 850px;
+    height: auto; 
 }
+
+.bancoDiaNone{
+ display: none;
+}
+
+.bancoNoiteNone{
+ display: none;
+}
+
+
 
 @keyframes gradientAnimation {
     0% {
@@ -167,4 +167,93 @@ display: none;
     100% {
         background-position: -100% 0%;
     }
+}
+
+
+@keyframes moveGato {
+    0% {
+        top: 534px;
+        left: 1350px;
+    }
+
+    100% {
+        top: 534px;
+        left: -100px;
+    }
+}
+
+
+.gatoNoiteNone {
+    display: none;
+}
+
+.gatoNoite{
+    position: absolute;
+    width: 100px;
+    top: 534px;
+    left: -110px;
+    animation: moveGato 65s linear;
+}
+
+.fotoPerfil{
+    position: fixed;
+    top: 336px;
+    left: 573px;
+    height: auto;
+    width: 80px;
+}
+
+.spaceNoite {
+    display: none;
+    position: fixed;
+    top: 336px;
+    left: -450px;
+    height: auto;
+    width: 400px;
+    background: radial-gradient(circle at center, rgb(27, 145, 80) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    animation: moveNave 3s linear, energyGlow 2s infinite;
+}
+
+@keyframes energyGlow {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.5);
+    }
+}
+@keyframes moveNave {
+    0% {
+        top: 0px;
+        left: 500px;
+    }
+
+    70% {
+        top: 200px;
+        left: 500px;
+    }
+
+    100% {
+        top: 200px;
+        left: -350px;
+    }
+}
+
+.logoOutdoor {
+    font-size: 18px;
+    position: fixed;
+    top: 326px;
+    left: 325px;
+    height: 95px;
+    width: 328px;
+    padding-top: 1px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #add8e6, #fbdb89, #98fb98);
+    background-size: 300% 100%;
+    animation: gradientAnimation 5s linear infinite;
+    position: fixed;
+    list-style: none;
+    cursor: pointer;
 }

@@ -18,7 +18,6 @@
    align-items: center;
    box-sizing: border-box;
    height: 100px;
-
 }
 
 .menu-navBar{
@@ -28,7 +27,6 @@
    gap:20px;
    justify-content: flex-start;
    padding-left: 50px;
-
 }
 
 .logo{
@@ -62,13 +60,57 @@ border-bottom: 1px solid var(--cor3);
 color: var(--cor3);
 }
 
-#contact{
+.contact{
    background-color: var(--cor1);
    color: var(--cor7);
    border: none;
+   cursor: pointer;
+   width: 100px;
+   padding: 2px;
+   color: var(--cor3);
 }
-#contact:hover{
-   background-color: var(--cor1);
+
+.menu-contacts{
+text-align: center;
+margin-top: 70px;
+top:-30px;
+left: 375px;
+list-style: none;
+position: absolute;
+background-color: rgb(255, 255, 255);
+overflow: hidden;
+height: 21px;
+transition: .3s linear;
+}
+
+.menu-contactsActive{
+text-align: center;
+margin-top: 70px;
+top:-30px;
+left: 375px;
+list-style: none;
+position: absolute;
+background-color: rgb(255, 255, 255);
+overflow: hidden;
+height: 120px;
+transition: .3s linear;
+}
+.textoMenu{
+   color: var(--cor3);
+   font-size: 14px;
+   margin-top:6px ;
+}
+
+.linkedin,
+.git,
+.whatsap {
+   margin-top:5px ;
+   margin-right:3px ;
+   width: 20px;
+   cursor: pointer;
+  
+}
+.contact:hover{
    color: var(--cor3);
    border: none;
 }
@@ -76,22 +118,59 @@ color: var(--cor3);
 .Link {
 text-decoration: none;
 }
-
+a{
+   text-decoration: none;
+   color: var(--cor7);
+   text-align: center;
+   align-items: center;
+   display: flex;
+   margin-left: 5px;
+}
 .claro{
    width: 15px;
    height: auto;
    cursor: pointer;
+   position: fixed;
+   left: 650px;
+   top: 44px;
 }
-#escuro{
-margin-left: -20px;
-}
+
 
 .active{
-   width: 20px;
-   height: auto;
-   cursor: pointer;
    display: none;
 }
+.my-letter{
+   background: var(--cor9);
+   color: var(--cor1);
+   font-weight: 700;
+   padding: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 2px;
+   margin: 2px;
+   font-family: Arial, sans-serif;
+   font-size: 13px;
+}
+.my-letterOutdoor{
+   background: var(--cor9);
+    font-size: 13px;
+      color: var(--cor1);
+      font-weight: 700;
+      padding: 1px;
+      padding-left: 3px;
+      padding-right: 3px;
+      border-radius: 2px;
+      margin: 2px;
+      font-family: Arial, sans-serif;
+}
 
+.liOutdoor{
+   margin-left: -40px;
+   text-align: center;
+}
 
-
+.sombra{
+   width: 128px;
+   margin-top: -15px;
+   margin-left: 60px;
+}
