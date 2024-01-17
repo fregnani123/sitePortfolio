@@ -207,7 +207,7 @@ display: none;
     top: 336px;
     left: -450px;
     height: auto;
-    width: 400px;
+    width: 300px;
     background: radial-gradient(circle at center, rgb(27, 145, 80) 0%, rgba(255, 255, 255, 0) 70%);
     border-radius: 50%;
     animation: moveNave 3s linear, energyGlow 2s infinite;
@@ -248,10 +248,18 @@ display: none;
     width: 328px;
     padding-top: 1px;
     padding-left: 20px;
-    background: linear-gradient(to right, #a5e4fd, #ffffff, #ffffff);
+    background: linear-gradient(to right, #1b50ff, #ffffff, #ffffff);
     background-size: 300% 100%;
     animation: gradientAnimation 5s linear infinite;
     position: fixed;
     list-style: none;
     cursor: pointer;
+}
+
+
+.imgSkills{
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 10px;
 }

@@ -12,6 +12,14 @@ import gato from '../assets/img/gato.gif';
 import bancoDia from '../assets/img/bancoPraça.png';
 import Space from '../assets/img/spaceAlien.gif';
 
+import imgReact from '../assets/img/react.png';
+import imgTs from '../assets/img/typescript.png';
+import js from '../assets/img/script-java.png';
+import mongodb from '../assets/img/mongodb.png';
+import node from '../assets/img/node-js.png';
+import html5 from '../assets/img/html-5.png';
+import css3 from '../assets/img/css-3.png';
+
 
 
 import Header from './header';
@@ -34,6 +42,8 @@ function body() {
        
             <ul className='logoOutdoor'>
                 <li className='liOutdoor'>🅵<span className='my-letterOutdoor'>A</span><span className='my-letterOutdoor'>B</span>🅸<span className='my-letterOutdoor'>A</span>🅽<span className='my-letterOutdoor'>O</span> 🅵🆁🅴🅶🅽<span className='my-letterOutdoor'>A</span>🅽🅸 <br />Fᴜʟʟ Sᴛᴀᴄᴋ Dᴇᴠᴇʟᴏᴘᴇʀ</li>
+
+                <li className='liSkills'><span><img className='imgSkills' src={imgReact} alt="" /></span><img className='imgSkills' src={js} alt="" /><span><img className='imgSkills' src={node} alt="" /></span><span ><img className='imgSkills' src={imgTs} alt="" /> </span><span><img className='imgSkills' src={mongodb} alt="" /></span><span><img className='imgSkills' src={html5} alt="" /></span><span><img className='imgSkills' src={css3} alt="" /></span></li>
                 <li></li>
             </ul>
         {/* <img className='fotoPerfil' src={FabianoFoto}></img> */}
