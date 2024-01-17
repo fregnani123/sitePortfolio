@@ -19,15 +19,15 @@ import Header from './header';
 function body() {
     
     const [active, setActive] = useState(false);
-    const [interagir, setInteragir] = useState(false);
+    // const [interagir, setInteragir] = useState(false);
 
     function toggleCor() {
             setActive(!active)
     }
 
-    function toggleInteragir(){
-            setInteragir(!interagir)
-    }
+    // function toggleInteragir(){
+    //         setInteragir(!interagir)
+    // }
 
     return (<body><div className='Header'><Header {...{ toggleCor, active }} /></div><div className={active ? 'container' : 'containerNoite'}>
         <div className='divImg'>
