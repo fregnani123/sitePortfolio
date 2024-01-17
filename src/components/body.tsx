@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../components/body.css';
 import bg from '../assets/img/cityDia.png'
-import FabianoFoto from '../assets/img/fabiano.png'
+// import FabianoFoto from '../assets/img/fabiano.png'
 import bgNoite from '../assets/img/cityNoite.png'
 import luaNoite from '../assets/img/lua.png';
 import arvore from '../assets/img/arvore1.png';
@@ -11,7 +11,7 @@ import passaros from '../assets/img/passaros.gif';
 import gato from '../assets/img/gato.gif';
 import bancoDia from '../assets/img/bancoPraça.png';
 import Space from '../assets/img/spaceAlien.gif';
-import sombra from '../assets/img/loop-104569-720p--unscreen.gif';
+
 
 
 import Header from './header';
@@ -34,9 +34,9 @@ function body() {
        
             <ul className='logoOutdoor'>
                 <li className='liOutdoor'>🅵<span className='my-letterOutdoor'>A</span><span className='my-letterOutdoor'>B</span>🅸<span className='my-letterOutdoor'>A</span>🅽<span className='my-letterOutdoor'>O</span> 🅵🆁🅴🅶🅽<span className='my-letterOutdoor'>A</span>🅽🅸 <br />Fᴜʟʟ Sᴛᴀᴄᴋ Dᴇᴠᴇʟᴏᴘᴇʀ</li>
-                <li><img className='sombra' src={sombra} alt=""/></li>
+                <li></li>
             </ul>
-        <img className='fotoPerfil' src={FabianoFoto}></img>
+        {/* <img className='fotoPerfil' src={FabianoFoto}></img> */}
         <img className={active ? 'luaNone' : 'luaNoite'} src={luaNoite} alt="" />
         <img className={active ? 'cityNone':'city'} src={bg} alt="" />
         <img className={active ?'cityNoite':'cityNoiteNone' } src={bgNoite} alt="" />

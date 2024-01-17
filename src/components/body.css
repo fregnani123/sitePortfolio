@@ -157,8 +157,6 @@ display: none;
  display: none;
 }
 
-
-
 @keyframes gradientAnimation {
     0% {
         background-position: 100% 0%;
@@ -250,7 +248,7 @@ display: none;
     width: 328px;
     padding-top: 1px;
     padding-left: 20px;
-    background: linear-gradient(to right, #add8e6, #fbdb89, #98fb98);
+    background: linear-gradient(to right, #a5e4fd, #ffffff, #ffffff);
     background-size: 300% 100%;
     animation: gradientAnimation 5s linear infinite;
     position: fixed;

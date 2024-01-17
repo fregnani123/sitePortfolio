@@ -19,7 +19,7 @@ function Header({ toggleCor, active}: HeaderProps) {
         { id: '3', texto: 'Portfolio', to: '/' },
     ];
     const listaContato = [
-        { id: '4', texto: 'LinkedIn', icon: linkedin, link: '', className:'linkedin', },
+        { id: '4', texto: 'LinkedIn', icon: linkedin, link: 'https://www.linkedin.com/in/fabiano-fregnani-8984051a7/', className:'linkedin', },
         { id: '5', texto: 'GitHub', icon: git, link: 'https://github.com/fregnani123', className: 'git', },
         { id: '6', texto: 'WhatsApp', icon: whatsap, link: 'https://api.whatsapp.com/send?phone=5548996607600&text=', className: 'whatsap', },
     ];
@@ -41,7 +41,7 @@ function Header({ toggleCor, active}: HeaderProps) {
                         <li className={active ? 'li-Menu' : 'li-MenuNoite'}>{texto}</li>
                     </Link>
                 ))}<li>
-                    <ul className={menuList?'menu-contacts':'menu-contactsActive'}>
+                    <ul className={menuList ? 'menu-contactsActive' : 'menu-contacts'}>
                     <li onClick={listaActive} className='contact'>Contact</li>
                     {listaContato.map(({ id, texto, icon, link, className }) => (
                         <li key={id}>
