@@ -39,7 +39,6 @@ function body() {
 
     return (<body><div className='Header'><Header {...{ toggleCor, active }} /></div><div className={active ? 'container' : 'containerNoite'}>
         <div className='divImg'>
-       
             <ul className='logoOutdoor'>
                 <li className='liOutdoor'>🅵<span className='my-letterOutdoor'>A</span><span className='my-letterOutdoor'>B</span>🅸<span className='my-letterOutdoor'>A</span>🅽<span className='my-letterOutdoor'>O</span> 🅵🆁🅴🅶🅽<span className='my-letterOutdoor'>A</span>🅽🅸 <br />Fᴜʟʟ Sᴛᴀᴄᴋ Dᴇᴠᴇʟᴏᴘᴇʀ</li>
 
