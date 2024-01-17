@@ -10,7 +10,7 @@ function app() {
     <div className='app'>
       <Router>
         <Routes>
-          <Route path='/sitePortfolio/' element={<Body/>}></Route>
+          <Route path='/home' element={<Body/>}></Route>
         </Routes>
     </Router>
     </div>
