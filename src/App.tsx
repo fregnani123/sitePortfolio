@@ -18,3 +18,6 @@ function app() {
 }
 
 export default app
+
+
+// Endereço site no gitPages https://fregnani123.github.io/sitePortfolio/
