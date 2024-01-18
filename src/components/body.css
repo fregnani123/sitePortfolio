@@ -85,7 +85,7 @@ display: none;
     position: fixed;
     margin-left: 150px;
 }
-.arvoreDia, .arvoreNoite{
+/* .arvoreDia, .arvoreNoite{
     position: fixed;
     top: 324px;
     left: 40px;
@@ -99,7 +99,7 @@ display: none;
 
 .arvoreNoiteNone {
     display: none;
-}
+} */
 
 .outdoorDia,.outdoorNoite{
     position: fixed;
@@ -240,6 +240,7 @@ display: none;
 }
 
 .logoOutdoor {
+    /* display: none; */
     font-size: 18px;
     position: fixed;
     top: 326px;
@@ -248,9 +249,9 @@ display: none;
     width: 328px;
     padding-top: 1px;
     padding-left: 20px;
-    background: linear-gradient(to right, #1b50ff, #ffffff, #ffffff);
+    background: linear-gradient(to right, #2d5eff, #fff27d, #ffffff,#abffb2);
     background-size: 300% 100%;
-    animation: gradientAnimation 5s linear infinite;
+    animation: gradientAnimation 5s infinite;
     position: fixed;
     list-style: none;
     cursor: pointer;
@@ -263,3 +264,54 @@ display: none;
     margin-left: 5px;
     margin-top: 10px;
 }
+
+ .outdoor-about {
+    display: none;
+     font-size: 18px;
+     position: fixed;
+     top: 326px;
+     left: 325px;
+     height: 95px;
+     width: 328px;
+     padding-left: 10px;
+     background: rgb(0, 2, 20);
+     background-size: 300% 100%;
+     position: fixed;
+     list-style: none;
+     cursor: pointer;
+     overflow: hidden;
+     text-align: center;
+ }
+
+ .rolling-text {
+    margin-right: 10px;
+    color: var(--cor1);
+     position: absolute;
+     animation: roll 40s linear infinite;
+ }
+
+ @keyframes roll {
+     0% {
+         transform: translateY(28%);
+     }
+
+     100% {
+         transform: translateY(-100%);
+     }
+ }
+
+ @keyframes gradientAnimation {
+     0% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0 50%;
+     }
+ }
+
+ .photoPerfil{
+    width: 110px;
+    height: auto;
+    border-radius: 50%;
+ }
